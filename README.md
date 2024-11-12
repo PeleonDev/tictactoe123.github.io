@@ -1,68 +1,46 @@
-# Tic-Tac-Toe - Surprise Edition
+# **WARNING: This is NOT Tic-Tac-Toe!**
 
-Willkommen bei **Tic-Tac-Toe - Surprise Edition**, einem klassischen Tic-Tac-Toe-Spiel, das alles andere als gewöhnlich ist! Bereite dich darauf vor, ein scheinbar harmloses Spiel zu spielen, das unerwartet aufregende Überraschungen bereithält.
+Welcome to **Tic-Tac-Toe - Surprise Edition**. What may seem like a harmless Tic-Tac-Toe game is actually a website that hides a **huge surprise**.
 
-**Achtung**: Dieses Spiel mag wie ein einfaches Tic-Tac-Toe erscheinen, aber es enthält unerwartete Elemente, die dich möglicherweise überraschen könnten. Wenn du dich für die Herausforderung traust, dann viel Spaß – aber sei auf alles vorbereitet!
+**This is NOT a Tic-Tac-Toe game**. It may look like one, but in reality, you’ll be confronted with an unexpected and potentially shocking surprise once you click "Accept Cookies."
 
-## Features
+## **What you need to know**
 
-- **Klassisches Tic-Tac-Toe** im gewohnten Stil
-- **Einzelspieler- oder Zwei-Spieler-Modus**
-- **Unerwartete Überraschungen**, die das Spiel spannender machen
-- Perfekt für alle, die Spaß an einem harmlosen Spiel mit einem unerwarteten Twist haben!
+- This website looks like a **Tic-Tac-Toe game**, but **it's not**.
+- **Jumpscare Alert**: Once you accept the cookies, you'll be hit with a shocking surprise— and it has nothing to do with Tic-Tac-Toe.
+- There is no actual game. This is a **decoy** to trigger a scary surprise!
 
-## Installation
+## **Important Notes**
 
-1. **Clone** das Repository:
-    ```bash
-    git clone https://github.com/dein-benutzername/tic-tac-toe-surprise.git
-    ```
+- **Surprise Effect**: After you click “Accept Cookies”, an interactive jumpscare will be triggered. Be prepared for a shock!
+- **Health Warning**: This page is not suitable for people with heart conditions, anxiety, or those who are easily scared. Please be aware of the risks before proceeding.
+- **Disclaimer**: The site owner takes no responsibility for any emotional or health-related reactions triggered by the jumpscare.
 
-2. **Installiere Abhängigkeiten** (falls notwendig):
-    ```bash
-    cd tic-tac-toe-surprise
-    npm install
-    ```
+## **How it works**
 
-3. **Starte das Spiel**:
-    ```bash
-    npm start
-    ```
+1. You’ll be asked if you’d like to **Accept Cookies**.
+2. Afterward, you’ll be directed to what seems like a Tic-Tac-Toe interface.
+3. **There is no Tic-Tac-Toe**— it ends with a shocking jumpscare!
 
-4. Öffne deinen Browser und gehe zu **localhost:3000** (oder der entsprechenden URL).
+## **License**
 
-## Spielanleitung
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
-1. **Wähle deinen Spielmodus**: Spiele gegen den Computer oder fordere einen Freund heraus.
-2. **Klicke** auf die Felder im Spielfeld, um deine Züge zu platzieren.
-3. **Ziel des Spiels**: Versuche, drei deiner Markierungen in einer Reihe zu platzieren und zu gewinnen. Doch sei vorsichtig – es könnte etwas anderes passieren!
+## **Disclaimer**
 
-## Wichtige Hinweise
-
-- **Interaktive Elemente**: Diese Website enthält interaktive Elemente, die für einige Nutzer möglicherweise unerwartet sein könnten. Diese Überraschungen können während des Spiels auftreten, also sei vorbereitet!
-- **Haftungsausschluss**: Der Betreiber übernimmt keine Haftung für unerwartete Reaktionen oder gesundheitliche Folgen durch die interaktiven Inhalte der Seite.
-
-## Lizenz
-
-Dieses Projekt ist unter der **GNU-Lizenz** lizenziert – siehe die [LICENSE](https://github.com/PeleonDev/peleondev.github.io/blob/main/LICENSE) Datei für Details.
-
-## Haftungsausschluss
-
-Die Website enthält unerwartete interaktive Elemente. Bitte spiele nur weiter, wenn du Überraschungen magst und gesundheitlich uneingeschränkt bist. Der Betreiber übernimmt keine Haftung für Fehler oder unerwünschte Reaktionen auf die interaktiven Inhalte.
+Please note that the website owner is not responsible for any health issues or shock reactions caused by the jumpscare or interactive elements on this site. **Play at your own risk!**
 
 ---
 
-### Zusätzliche Hinweise:
+### More Information
 
-- **Entwickler**: Diese Seite wurde von **Cayden und Peleon** entworfen.
-- **Urheberrecht**: Alle Rechte vorbehalten. Die Inhalte dieser Seite sind urheberrechtlich geschützt.
-- **Cookies**: Diese Seite verwendet Cookies, um dir eine bessere Benutzererfahrung zu bieten. Indem du diese akzeptierst, stimmst du der Nutzung von Cookies zu.
+- **Developer**: This site was designed by **Pfilz and Peleon**.
+- **Copyright**: All rights reserved. The contents of this site are copyrighted.
+- **Cookies**: This site uses cookies to offer you a better user experience. By accepting, you agree to the use of cookies.
 
 ---
 
-### Zusätzliche Erklärung:
+### Additional Warnings:
 
-1. **Ziel**: Der Text soll den Eindruck erwecken, dass es sich um ein harmloses Tic-Tac-Toe-Spiel handelt. Gleichzeitig wird der Nutzer subtil gewarnt, dass Überraschungen auftreten könnten. 
-2. **Haftungsausschluss**: Die Erklärung am Ende und der Hinweis auf mögliche „unerwartete Reaktionen“ schaffen Klarheit, ohne direkt den Jumpscare zu verraten. So bleibt der Überraschungseffekt erhalten, während du dich rechtlich absicherst.
-
-Durch diese Formulierung wirst du rechtlich abgesichert und verhinderst Missverständnisse, während der Überraschungseffekt (Jumpscare) für die Nutzer erhalten bleibt.
+- **Health Warning**: Due to the jumpscare, it is advised that you only visit this page if you do not have health conditions such as heart problems or anxiety disorders.
+- **Not for the faint-hearted**: This site is not suitable for those who are sensitive to sudden shocks or surprises.
