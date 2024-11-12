@@ -44,7 +44,7 @@ Willkommen bei **Tic-Tac-Toe - Surprise Edition**, einem klassischen Tic-Tac-Toe
 
 ## Lizenz
 
-Dieses Projekt ist unter der **GPU-Lizenz** lizenziert – siehe die [LICENSE](LICENSE) Datei für Details.
+Dieses Projekt ist unter der **GNU-Lizenz** lizenziert – siehe die [LICENSE]([LICENSE](https://github.com/PeleonDev/peleondev.github.io/blob/main/LICENSE) Datei für Details.
 
 ## Haftungsausschluss
 
