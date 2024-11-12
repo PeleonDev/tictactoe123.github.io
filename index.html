@@ -5,30 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>TicTacToe</title>
     <meta property="og:title" content="TicTacToe">
-    <!-- Zusätzliche Metadaten wie im Original -->
+    <meta property="og:site_name" content="Pfilz, Peleon">
+    <meta property="og:image" content="images/lightshot.png">
+    <meta property="og:description" content="TicTacToe online spielen">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="photo">
+    <meta name="twitter:title" content="TicTacToe">
+    <meta name="twitter:site" content="@peleonito">
+    <meta name="twitter:description" content="TicTacToe">
+    <meta name="twitter:image:src" content="lightshot.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* CSS zur Optimierung des Layouts */
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
         body, html {
             margin: 0;
             padding: 0;
             height: 100vh;
             width: 100vw;
         }
-        .overlay, .content-cover {
+        .overlay, .scare, .content-cover {
             position: fixed;
             top: 0;
             left: 0;
             height: 100vh;
             width: 100vw;
         }
-        /* Layout für mobile Geräte */
+        .scare {
+            z-index: 1;
+        }
+        .content-cover {
+            z-index: 2;
+            background-color: white;
+        }
         .overlay {
             z-index: 3;
         }
-        /* Stil für Video und Interaktion */
         video#video {
             height: 100%;
             width: 100%;
@@ -51,15 +81,25 @@
                     </svg>
                 </button>
             </div>
-            <div class="p-6 space-y-6 text-center">
+            <div class="p-6 space-y-6">
                 <p class="text-gray-600 leading-relaxed">
 Diese Website verwendet Cookies, um dir die relevantesten Informationen anzubieten und um besser zu verstehen, wie du diese Website nutzt. Bitte akzeptiere die Cookies für eine optimale Leistung.
+
+Hinweis: Diese Seite wurde von Pfilz und Peleon entworfen und ist urheberrechtlich geschützt. Sie enthält interaktive Elemente, die für einige Nutzer unerwartet oder schockierend sein können. Die integrierte KI könnte Überraschungen bereithalten.
+
+Information: Bitte klicke nur weiter, wenn du überraschende Reaktionen oder unerwartete Inhalte ohne gesundheitliche Einschränkungen ertragen kannst. Der Betreiber übernimmt keine Haftung für Fehler oder unerwünschte Reaktionen auf die interaktiven Inhalte.
                 </p>
                 <div class="space-y-4">
                     <div class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
                         <span class="text-sm text-gray-700">Notwendige Cookies</span>
                     </div>
                     <div class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
                         <span class="text-sm text-gray-700">Analyse-Cookies (optional)</span>
                     </div>
                 </div>
@@ -68,11 +108,11 @@ Diese Website verwendet Cookies, um dir die relevantesten Informationen anzubiet
                 <a href="https://discord.com/users/746808578039349371" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-dark transition-colors text-sm font-medium">
                     Datenschutzrichtlinie
                 </a>
-                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
-                    <button id="decline-button" class="px-6 py-2 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                <div class="flex space-x-3">
+                    <button id="decline-button" class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
                         Ablehnen
                     </button>
-                    <button id="accept-button" class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                    <button id="accept-button" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
                         Akzeptieren
                     </button>
                 </div>
@@ -82,8 +122,86 @@ Diese Website verwendet Cookies, um dir die relevantesten Informationen anzubiet
     <div class="scare">
         <video id="video" class="video" src="media/video.mp4" loop></video>
     </div>
+    <script type="text/javascript">
+        const video = document.getElementById("video");
+        const overlay = document.getElementById("overlay");
+        const contentCover = document.getElementById("content-cover");
+        const declineButton = document.getElementById("decline-button");
+        const acceptButton = document.getElementById("accept-button");
+        const closeButton = document.getElementById("close-button");
+
+        let hasClicked;
+
+        window.onbeforeunload = function() {
+            if(hasClicked) return true;
+        };
+
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        function getCookie(name) {
+            const decodedCookies = decodeURIComponent(document.cookie);
+            const cookies = decodedCookies.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i].trim();
+                if (cookie.indexOf(name + "=") === 0) {
+                    return cookie.substring(name.length + 1);
+                }
+            }
+            return "";
+        }
+
+        function hideCookieConsent() {
+            overlay.classList.add('hidden');
+            contentCover.classList.add('hidden');
+            video.play();
+            videoClick();
+        }
+
+        function handleCookieConsent(acceptAll) {
+            if(!hasClicked) hasClicked = true;
+            setCookie("cookie_consent", "true", 365);
+            setCookie("essential_cookies", "true", 365);
+            setCookie("analytics_cookies", acceptAll ? "true" : "false", 365);
+            hideCookieConsent();
+        }
+
+        function checkCookieConsent() {
+            if (getCookie("cookie_consent")) {
+                hideCookieConsent();
+            }
+        }
+
+        function videoClick(event) {
+            if(event) event.preventDefault();
+            const { documentElement } = document;
+            if(documentElement.requestFullscreen) documentElement.requestFullscreen();
+            else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
+            else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
+            else if(documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
+        }
+
+        acceptButton.addEventListener("click", () => handleCookieConsent(true));
+        declineButton.addEventListener("click", () => handleCookieConsent(false));
+        closeButton.addEventListener("click", hideCookieConsent);
+        video.addEventListener("click", videoClick);
+
+        window.addEventListener('load', checkCookieConsent);
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-07T0N39Y0D"></script>
     <script>
-        // Javascript wie im Original, für Cookie-Verwaltung und Interaktion
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-07T0N39Y0D', {
+            'cookie_flags': 'max-age=7200;secure;samesite=none'
+        });
     </script>
 </body>
 </html>
