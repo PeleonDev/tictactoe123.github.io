@@ -24,7 +24,7 @@ Welcome to **Tic-Tac-Toe - Surprise Edition**. What may seem like a harmless Tic
 
 ## **License**
 
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** – see the [LICENSE](https://github.com/PeleonDev/peleondev.github.io/blob/main/LICENSE) file for details.
 
 ## **Disclaimer**
 
@@ -34,7 +34,7 @@ Please note that the website owner is not responsible for any health issues or s
 
 ### More Information
 
-- **Developer**: This site was designed by **Pfilz and Peleon**.
+- **Developer**: This site was designed by **Cayden and Peleon**.
 - **Copyright**: All rights reserved. The contents of this site are copyrighted.
 - **Cookies**: This site uses cookies to offer you a better user experience. By accepting, you agree to the use of cookies.
 
