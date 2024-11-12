@@ -54,7 +54,7 @@ Die Website enthält unerwartete interaktive Elemente. Bitte spiele nur weiter, 
 
 ### Zusätzliche Hinweise:
 
-- **Entwickler**: Diese Seite wurde von **Pfilz und Peleon** entworfen.
+- **Entwickler**: Diese Seite wurde von **Cayden und Peleon** entworfen.
 - **Urheberrecht**: Alle Rechte vorbehalten. Die Inhalte dieser Seite sind urheberrechtlich geschützt.
 - **Cookies**: Diese Seite verwendet Cookies, um dir eine bessere Benutzererfahrung zu bieten. Indem du diese akzeptierst, stimmst du der Nutzung von Cookies zu.
 
