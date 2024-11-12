@@ -24,7 +24,7 @@ Welcome to **Tic-Tac-Toe - Surprise Edition**. What may seem like a harmless Tic
 
 ## **License**
 
-This project is licensed under the **MIT License** – see the [LICENSE](https://github.com/PeleonDev/peleondev.github.io/blob/main/LICENSE) file for details.
+This project is licensed under the **GNU License** – see the [LICENSE](https://github.com/PeleonDev/peleondev.github.io/blob/main/LICENSE) file for details.
 
 ## **Disclaimer**
 
